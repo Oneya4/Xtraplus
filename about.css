@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto|Herr+Von+Muellerhoff|Poppins|Source+Sans+Pro:400,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--main-font: 'Roboto', poppins, sans-serif,;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --body-font-color: #f1f1f1;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-size: 1.2rem;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.about{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.about::before{
+	content: '';
+	position: absolute;
+	top: 4.4rem;
+	width: 100%;
+	height: 90%;
+	background: url(patterns.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: .2;
+}
+
+.about-headline{
+	position: relative;
+	background: #1c1c1c;
+	width: 100%;
+	padding: .5rem;
+	font-size: 2.2rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #d62f2f;
+}
+
+.about-description p{
+	position: relative;
+	padding: 50px;
+	display: flex;
+	font-family: var(--body-font);
+	font-size: var(--body-font-size);
+	line-height: 1.6;
+}
+
+/*staff*/
+.staff{
+	position: relative;
+	margin-top: 2px;
+	width: 100%;
+	height: 100vh;
+	padding: 30px 50px;
+}
+
+.staff::before{
+	content: '';
+	position: absolute;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: #d62f2f;
+	opacity: .95;
+	transform: skewX(-40deg);
+	border-radius: 20%;
+}
+
+.row{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-wrap: wrap;
+}
+
+.column{
+	position: relative;
+	width: 460px;
+  	height: 100vh;
+  	float: left;
+  	margin: 1.5rem 3rem;
+  	overflow-y: hidden;
+  	border-radius: 15px;
+  	background: #e8e7e3;
+  	color: #111;
+}
+
+.headshot{
+	text-align: center;
+	width: 100%;
+	background: inherit;
+	border-radius: 50%;
+	padding: .5rem;
+}
+
+.column img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.column:hover img{
+	width: 30%;
+	border-radius: 50%;
+	transition: .8s ease;
+}
+
+.column:hover{
+	background: #d62f2f;
+	color: #ffffff;
+	transition: .5s;
+}
+
+.column:nth-child(3):hover{
+	overflow-y: scroll;
+}
+
+.column:nth-child(5):hover{
+	overflow-y: scroll;
+}
+
+.card{
+  	position: relative;
+  	top: 0;
+  	left: 0;
+  	cursor: pointer;
+  	width: 100%;
+  	height: 100%;
+  	border-radius: 15px;
+}
+
+.card-content{
+	height: 100%;
+  	text-align: center;
+  	width: 100%;
+  	position: relative;
+}
+
+.card-content p{
+	font-size: var(--body-font-size);
+}
+
+.description-paragraph p{
+  	padding: .5rem;
+  	font-family: var(--body-font);
+}
+
+.row::after{
+  	content: "";
+  	clear: both;
+}
+
+/*medi queries*/
+@media (max-width: 990px){
+	.column{
+		width: 95%;
+	  	height: 100vh;
+	  	margin: 1rem;
+	}
+
+	.column:hover{
+		overflow-y: scroll;
+	}
+}

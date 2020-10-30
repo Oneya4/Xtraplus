@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto|Herr+Von+Muellerhoff|Poppins|Source+Sans+Pro:400,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--main-font: 'Roboto', poppins, sans-serif,;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --body-font-color: #f1f1f1;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.sec{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(#03a9f4, #e91e63);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px;
+	margin-bottom: 5px;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo{
+	font-size: 3rem;
+	letter-spacing: 2px;
+	right: -2px;
+	color: var(--body-font-color);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.first-letter{
+	font-size: 4rem;
+}
+
+.navigation{
+	position: relative;
+	display: flex;
+}
+
+.drop-down{
+	position: relative;
+	display: inline-block;
+}
+
+.drop-down-content{
+	display: none;
+	position: absolute;
+	min-width: 200px;
+	z-index: 2;
+}
+
+.drop-down-content a{
+	padding: 12px 0;
+	text-decoration: none;
+	display: block;
+}
+
+.drop-down-content a:hover{
+	color: #111;
+}
+
+.drop-down, .drpdown:hover .drop-down-content{
+	display: block;
+	background-color: inherit;
+	color: #f1f1f1;
+}
+
+.navigation li{
+	list-style: none;
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+
+.navigation li a{
+	color: var(--body-font-color);
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+.content{
+	position: relative;
+	max-width: 600px;
+	z-index: 1;
+}
+
+.content h2{
+	color: var(--body-font-color);
+	font-size: 3em;
+	line-height: 1em;
+}
+
+.content h2 span{
+	color: var(--body-font-color);
+	font-size: .7em;
+}
+
+.content p{
+	color: var(--body-font-color);
+	margin: 10px 0 20px;
+}
+
+.content a{
+	padding: 10px 30px;
+	background: #fff;
+	color: #111;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.monitor{
+	position: absolute;
+	bottom: 3px;
+	height: 80%;
+	right: 80px;
+	width: 40%;
+}
+
+.monitor img{
+	width: 100%;
+}
+
+/*media queries*/
+@media (max-width: 990px){
+	
+	header{
+		padding: 20px 40px;
+	}
+
+	.navigation{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		background: linear-gradient(#03a9f4, #e91e63);
+		z-index: 100;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.sec{
+		justify-content: center;
+		padding: 40px 40px 0;
+		flex-direction: column;
+	}
+
+	.navigation.active{
+		display: flex;
+	}
+
+	.navigation li a{
+		color: var(--body-font-color);
+		margin-left: 0;
+		text-decoration: none;
+		font-size: 30px;
+	}
+
+	.toggle{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		background: url(menu.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		z-index: 1000;
+	}
+
+	.toggle.active{
+		position: fixed;
+		right: 40px;
+		background: url(close.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.content{
+		max-width: 100%;
+		margin-top: 120px;
+	}
+
+	.content h2{
+		font-size: 2.6rem;
+	}
+
+	.monitor{
+		position: relative;
+		bottom: 0;
+		right: initial;
+		height: initial;
+		width: 80%;
+		margin-top: 20px;
+	}
+
+	header .logo{
+		font-size: 2.3rem;
+	}
+
+	.first-letter{
+		font-size: 3rem;
+	}
+
+	.heading{
+		color: var(--body-font-color); 
+		font-size: 2rem;
+		letter-spacing: 2px;
+		right: -2px;
+	}
+
+	.description{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
