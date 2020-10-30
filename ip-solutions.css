@@ -37,7 +37,6 @@ body{
 	height: 100%;
 	background: url(patterns.jpg);
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
 	opacity: .2;
 }
