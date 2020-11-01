@@ -24,7 +24,6 @@ body{
 .about{
 	position: relative;
 	width: 100%;
-	height: 100%;
 	z-index: 2;
 }
 
@@ -166,8 +165,20 @@ body{
   	clear: both;
 }
 
+footer{
+	display: none;
+}
+
 /*medi queries*/
 @media (max-width: 990px){
+	.staff::before{
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 20%;
+		transform: skewY(-40deg);
+	}
+
 	.column{
 		width: 95%;
 	  	height: 100vh;

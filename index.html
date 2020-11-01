@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>XtraPlus</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 	<!-- landing page starts -->
@@ -13,8 +16,7 @@
 			<a href="#" class="logo"><span class="first-letter">X</span>traplus</a>
 			<div class="toggle" onclick="toggle()"></div>
 			<ul class="navigation">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="about.html">About</a></li>
 				<li class="drpdown"><a href="#">Services</a>
 					<div class="drop-down">
 						<ul class="drop-down-content">
@@ -24,7 +26,7 @@
 						</ul>
 					</div>
 				</li>
-				<li><a href="#">Work</a></li>
+				<li><a href="#">Clients</a></li>
 				<li><a href="#">Partners</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
@@ -37,7 +39,54 @@
 				<a href="#">Learn More</a>
 			</div>
 		</div>
-		<img src="monitor.png" class="monitor">
+
+		<div class="slider">
+	      	<div class="slides">
+		        <!--radio buttons start-->
+		        <input type="radio" name="radio-btn" id="radio1">
+		        <input type="radio" name="radio-btn" id="radio2">
+		        <input type="radio" name="radio-btn" id="radio3">
+		        <input type="radio" name="radio-btn" id="radio4">
+		        <!--radio buttons end-->
+
+		        <!--slide images start-->
+		        <div class="slide first">
+		          	<img src="biometric1.jpg" alt="">
+		        </div>
+
+		        <div class="slide">
+		          	<img src="surveillance.jpg" alt="">
+		        </div>
+	        
+		        <div class="slide">
+		          	<img src="monitor.png" alt="">
+		        </div>
+
+		        <div class="slide">
+		          	<img src="bg3.jpg" alt="">
+		        </div>
+		        <!--slide images end-->
+
+		        <!--automatic navigation start-->
+		        <div class="navigation-auto">
+		        	<div class="auto-btn1"></div>
+		          	<div class="auto-btn2"></div>
+		          	<div class="auto-btn3"></div>
+		          	<div class="auto-btn4"></div>
+		        </div>
+		        <!--automatic navigation end-->
+	      	</div>
+
+	      	<!--manual navigation start-->
+	      	<div class="navigation-manual">
+	        	<label for="radio1" class="manual-btn"></label>
+	        	<label for="radio2" class="manual-btn"></label>
+	        	<label for="radio3" class="manual-btn"></label>
+	        	<label for="radio4" class="manual-btn"></label>
+	      	</div>
+	      	<!--manual navigation end-->
+	    </div>
+	    <!--image slider end-->
 	</section>
 	<!-- Landing page ends -->
 
@@ -50,6 +99,70 @@
 				<p class="global-text">Due to our dynamic and robust nature, our core business activities have steadily grown, expanded  and matured to include supply of Hardware and Software products, Software Management and Inte gration Solutions, Network Management Solutions, Banking Solutions, Data Management and  Backup Solutions, Telecommunications Solutions and many more.<br>In addition to these, we offer Systems Audits & Consultancy Services to corporate entities on ICT  systems and solutions.</p>
 		</div>
 	</section>
+
+	<footer>
+      	<div class="main-content">
+        	<div class="left box">
+          		<h2>About us</h2>
+				<div class="content1">
+	           		<p>CodinNepal is a YouTube channel where you can learn web designing, web development, ui/ux designing, html css tutorial, hover animation and effects, javascript and jquery tutorial and related so on.</p>
+					<div class="social">
+			          <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+			          <a href="#"><span class="fab fa-twitter"></span></a>
+			          <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+			          <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+	        		</div>
+				</div>
+			</div>
+
+			<div class="center box">
+	          <h2>Address</h2>
+				<div class="content1">
+		            <div class="place">
+		              <span class="fas fa-map-marker-alt"></span>
+		              <span class="text">Birendranagar, Surkhet</span>
+		            </div>
+					<div class="phone">
+		              <span class="fas fa-phone-alt"></span>
+		              <span class="text">+089-765432100</span>
+		            </div>
+					<div class="email">
+		              <span class="fas fa-envelope"></span>
+		              <span class="text">abc@example.com</span>
+		            </div>
+				</div>
+			</div>
+
+			<div class="right box">
+	          <h2>Contact us</h2>
+				<div class="content1">
+	            	<form action="#">
+	              		<div class="email">
+	                		<div class="text">Email *</div>
+							<input type="email" required>
+	              		</div>
+
+						<div class="msg">
+	                		<div class="text">Message *</div><!-- error check here -->
+							<textarea id=".msgForm" rows="2" cols="25" required></textarea><!-- here -->
+	              			<br/>
+
+						<div class="btn">
+							<button type="submit">Send</button>
+	              		</div>
+
+						<div class="bottom">
+							<center>
+					          <span class="credit">Created By <a href="https://oneya4.github.io/Oneya" target="_blank">O'neya Ink.</a> | </span>
+					          <span class="far fa-copyright"></span> 2020 All rights reserved.
+					        </center>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 <script type="text/javascript" src="scripts.js"></script>
 </body>
