@@ -14,32 +14,20 @@
     --body-font-color: #f1f1f1;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
-}
-
-body{
-	overflow-x: hidden;
-}
-
-.sec{
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-	background: linear-gradient(#03a9f4, #e91e63);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 100px;
+    --body-font-size: 1.1rem;
 }
 
 header{
-	position: absolute;
+	background: #d62f2f;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 40px 100px;
+	padding: 15px 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 10;
 }
 
 header .logo{
@@ -69,7 +57,7 @@ header .logo{
 	display: none;
 	position: absolute;
 	min-width: 200px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .drop-down-content a{
@@ -84,7 +72,7 @@ header .logo{
 
 .drop-down, .drpdown:hover .drop-down-content{
 	display: block;
-	background-color: inherit;
+	background-color: #d62f2f;
 	color: #f1f1f1;
 }
 
@@ -100,37 +88,6 @@ header .logo{
 	text-decoration: none;
 }
 
-.content{
-	position: relative;
-	max-width: 600px;
-	z-index: 1;
-}
-
-.content h2{
-	color: var(--body-font-color);
-	font-size: 3em;
-	line-height: 1em;
-}
-
-.content h2 span{
-	color: var(--body-font-color);
-	font-size: .7em;
-}
-
-.content p{
-	color: var(--body-font-color);
-	margin: 10px 0 20px;
-}
-
-.content a{
-	padding: 10px 30px;
-	background: #fff;
-	color: #111;
-	display: inline-block;
-	text-decoration: none;
-}
-
-/*media queries*/
 @media (max-width: 990px){
 	
 	header{
@@ -152,12 +109,6 @@ header .logo{
 		flex-direction: column;
 	}
 
-	.sec{
-		justify-content: center;
-		padding: 40px 40px 0;
-		flex-direction: column;
-	}
-
 	.navigation.active{
 		display: flex;
 	}
@@ -173,7 +124,7 @@ header .logo{
 		position: relative;
 		width: 30px;
 		height: 30px;
-		background: url(menu.png);
+		background: url(../media/images/menu.png);
 		background-size: 30px;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -184,19 +135,10 @@ header .logo{
 	.toggle.active{
 		position: fixed;
 		right: 40px;
-		background: url(close.png);
+		background: url(../media/images/close.png);
 		background-size: 30px;
 		background-repeat: no-repeat;
 		background-position: center;
-	}
-
-	.content{
-		max-width: 100%;
-		margin-top: 120px;
-	}
-
-	.content h2{
-		font-size: 2.6rem;
 	}
 
 	header .logo{
@@ -206,33 +148,4 @@ header .logo{
 	.first-letter{
 		font-size: 3rem;
 	}
-
-	.heading{
-		color: var(--body-font-color); 
-		font-size: 2rem;
-		letter-spacing: 2px;
-		right: -2px;
-	}
-
-	.description{
-		display: flex;
-		flex-direction: column;
-	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

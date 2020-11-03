@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Roboto|Herr+Von+Muellerhoff|Poppins|Source+Sans+Pro:400,900&display=swap');
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-}
-
 :root{
 	--main-font: 'Roboto', poppins, sans-serif,;
     --secondary-font: 'Herr Von Muellerhoff', cursive;
@@ -14,7 +7,7 @@
     --body-font-color: #f1f1f1;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
-    --body-font-size: 1.2rem;
+    --body-font-size: 1.1rem;
 }
 
 body{
@@ -22,21 +15,8 @@ body{
 }
 
 .about{
-	position: relative;
 	width: 100%;
-	z-index: 2;
-}
-
-.about::before{
-	content: '';
-	position: absolute;
-	top: 4.4rem;
-	width: 100%;
-	height: 90%;
-	background: url(patterns.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	opacity: .2;
+	height: 100vh;
 }
 
 .about-headline{
@@ -62,22 +42,28 @@ body{
 }
 
 /*staff*/
-.staff{
-	position: relative;
-	margin-top: 2px;
-	width: 100%;
-	height: 100vh;
-	padding: 30px 50px;
-}
-
-.staff::before{
+.staff::before, .staff3::before{
 	content: '';
+	margin-top: 1.5rem;
 	position: absolute;
 	left: -50%;
 	width: 100%;
-	height: 100%;
+	height: 85%;
 	background: #d62f2f;
-	opacity: .95;
+	opacity: .9;
+	transform: skewX(-40deg);
+	border-radius: 20%;
+}
+
+.staff2::before, .staff4::before{
+	content: '';
+	position: absolute;
+	margin-top: 4.5rem;
+	right: -50%;
+	width: 100%;
+	height: 85%;
+	background: #d62f2f;
+	opacity: .9;
 	transform: skewX(-40deg);
 	border-radius: 20%;
 }
@@ -91,7 +77,7 @@ body{
 
 .column{
 	position: relative;
-	width: 460px;
+	width: 450px;
   	height: 100vh;
   	float: left;
   	margin: 1.5rem 3rem;
@@ -99,6 +85,8 @@ body{
   	border-radius: 15px;
   	background: #e8e7e3;
   	color: #111;
+  	z-index: 3;
+  	transition: .5s;
 }
 
 .headshot{
@@ -110,8 +98,9 @@ body{
 }
 
 .column img{
-	width: 100%;
+	width: 85%;
 	border-radius: 50%;
+	transition: .8s ease;
 }
 
 .column:hover img{
@@ -126,11 +115,11 @@ body{
 	transition: .5s;
 }
 
-.column:nth-child(3):hover{
+.staff2 .column:nth-child(1):hover{
 	overflow-y: scroll;
 }
 
-.column:nth-child(5):hover{
+.staff3 .column:nth-child(1):hover{
 	overflow-y: scroll;
 }
 
@@ -145,7 +134,6 @@ body{
 }
 
 .card-content{
-	height: 100%;
   	text-align: center;
   	width: 100%;
   	position: relative;
@@ -165,13 +153,12 @@ body{
   	clear: both;
 }
 
-footer{
-	display: none;
-}
-
-/*medi queries*/
+/*media queries*/
 @media (max-width: 990px){
-	.staff::before{
+	.about{
+		height: 100%;
+	}
+	.staff::before, .staff3::before{
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -179,13 +166,11 @@ footer{
 		transform: skewY(-40deg);
 	}
 
-	.column{
-		width: 95%;
-	  	height: 100vh;
-	  	margin: 1rem;
-	}
-
-	.column:hover{
-		overflow-y: scroll;
+	.staff2::before, .staff4::before{
+		right: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 20%;
+		transform: skewY(40deg);
 	}
 }
