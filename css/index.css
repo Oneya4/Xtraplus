@@ -24,7 +24,7 @@ body{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	background: linear-gradient(#03a9f4, #e91e63);
+	background: linear-gradient(#f00000, #dc281e);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -78,13 +78,9 @@ header .logo{
 	display: block;
 }
 
-.drop-down-content a:hover{
-	color: #111;
-}
-
 .drop-down, .drpdown:hover .drop-down-content{
 	display: block;
-	background-color: inherit;
+	background-color: rgb(0,0,0,.3);
 	color: #f1f1f1;
 }
 
@@ -141,15 +137,13 @@ header .logo{
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 90%;
 		height: 100%;
 		display: flex;
-		background: linear-gradient(#03a9f4, #e91e63);
+		flex-direction: column;
+		background: linear-gradient(to right, #ee0979, #ff6a00);
 		z-index: 100;
 		display: none;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
 	}
 
 	.sec{
@@ -160,6 +154,10 @@ header .logo{
 
 	.navigation.active{
 		display: flex;
+	}
+
+	.navigation li{
+		padding: 1.5rem;
 	}
 
 	.navigation li a{

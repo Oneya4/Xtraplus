@@ -18,7 +18,7 @@
 }
 
 header{
-	background: #d62f2f;
+	background: linear-gradient(#f00000, #dc281e);
 	position: relative;
 	top: 0;
 	left: 0;
@@ -72,7 +72,7 @@ header .logo{
 
 .drop-down, .drpdown:hover .drop-down-content{
 	display: block;
-	background-color: #d62f2f;
+	background: linear-gradient(to top, #f00000, #dc281e);
 	color: #f1f1f1;
 }
 

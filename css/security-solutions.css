@@ -66,6 +66,7 @@ body{
 
 .surveillance, .access{
 	display: flex;
+	padding: 1.5rem 0;
 }
 
 .surveillance > div, .access > div{
@@ -74,21 +75,34 @@ body{
 	padding: 0 50px;
 }
 
-.access img, .surveillance img{
+.image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image:nth-child(2){
+	flex-direction: column;
+}
+
+.image img{
 	width: 80%;
 	border-radius: 20px;
 }
 
 .paragraph{
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 
 .description{
 	font-size: var(--body-font-size);
 	font-family: var(--body-font);
+}
+
+.description-list{
+	padding-top: 5px;
+	padding-left: 30px;
 }
 
 .title{

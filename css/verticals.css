@@ -68,6 +68,7 @@ body{
 
 .surveillance, .access{
 	display: flex;
+	padding: 1.5rem 0;
 }
 
 .surveillance > div, .access > div{
@@ -76,8 +77,14 @@ body{
 	padding: 0 50px;
 }
 
-.access img, .surveillance img{
-	width: 80%;
+.image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image img{
+	width: 95%;
 	border-radius: 20px;
 }
 

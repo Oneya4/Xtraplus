@@ -16,7 +16,8 @@ body{
 
 .about{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
+	padding-bottom: 4rem;
 }
 
 .about-headline{
@@ -42,27 +43,27 @@ body{
 }
 
 /*staff*/
-.staff::before, .staff3::before{
+.staff::before, .staff3::before, .staff5::before, .staff7::before{
 	content: '';
 	margin-top: 1.5rem;
 	position: absolute;
 	left: -50%;
 	width: 100%;
 	height: 85%;
-	background: #d62f2f;
+	background: linear-gradient(#f00000, #dc281e);
 	opacity: .9;
 	transform: skewX(-40deg);
 	border-radius: 20%;
 }
 
-.staff2::before, .staff4::before{
+.staff2::before, .staff4::before, .staff6::before, .staff8::before{
 	content: '';
 	position: absolute;
 	margin-top: 4.5rem;
 	right: -50%;
 	width: 100%;
 	height: 85%;
-	background: #d62f2f;
+	background: linear-gradient(#f00000, #dc281e);
 	opacity: .9;
 	transform: skewX(-40deg);
 	border-radius: 20%;
@@ -92,7 +93,6 @@ body{
 .headshot{
 	text-align: center;
 	width: 100%;
-	background: inherit;
 	border-radius: 50%;
 	padding: .5rem;
 }
@@ -110,16 +110,12 @@ body{
 }
 
 .column:hover{
-	background: #d62f2f;
+	background: linear-gradient(#f00000, #dc281e);
 	color: #ffffff;
 	transition: .5s;
 }
 
-.staff2 .column:nth-child(1):hover{
-	overflow-y: scroll;
-}
-
-.staff3 .column:nth-child(1):hover{
+.staff .column:nth-child(2):hover{
 	overflow-y: scroll;
 }
 
@@ -158,7 +154,7 @@ body{
 	.about{
 		height: 100%;
 	}
-	.staff::before, .staff3::before{
+	.staff::before, .staff3::before, .staff5::before, .staff7::before{
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -166,7 +162,7 @@ body{
 		transform: skewY(-40deg);
 	}
 
-	.staff2::before, .staff4::before{
+	.staff2::before, .staff4::before, .staff6::before, .staff8::before{
 		right: 0;
 		width: 100%;
 		height: 100%;
