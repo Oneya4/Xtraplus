@@ -32,7 +32,7 @@ body{
 }
 
 .sec1{
-	background: linear-gradient(#f00000, #dc281e);
+	background: linear-gradient(#f11111, #da281e);
 }
 
 header{
@@ -112,6 +112,7 @@ header{
 
 .content p{
 	color: var(--body-font-color);
+	font-size: var(--text-font-size);
 	margin: 10px 0 20px;
 }
 
@@ -172,7 +173,7 @@ header{
 }
 
 .description:hover{
-	background: linear-gradient(#f00000, #dc281e);
+	background: linear-gradient(#f11111, #da281e);
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -192,6 +193,10 @@ header{
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
+}
+
+.description span{
+	padding: 0 10px;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -241,7 +246,7 @@ header{
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		background: linear-gradient(#f00000, #dc281e);
+		background: linear-gradient(#f11111, #da281e);
 		z-index: 100;
 		display: none;
 	}
