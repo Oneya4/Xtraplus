@@ -18,7 +18,7 @@
 }
 
 header{
-	background: linear-gradient(#f00000, #dc281e);
+	background: linear-gradient(#f00000, #f00000);
 	position: relative;
 	top: 0;
 	left: 0;
@@ -65,7 +65,7 @@ header{
 
 .drop-down, .drpdown:hover .drop-down-content{
 	display: block;
-	background: linear-gradient(to top, #f00000, #dc281e);
+	background: #f00000;
 	color: #f1f1f1;
 }
 
@@ -118,7 +118,7 @@ header{
 		color: var(--body-font-color);
 		margin-left: 0;
 		text-decoration: none;
-		font-size: 30px;
+		font-size: 1.5rem;
 	}
 
 	.toggle{

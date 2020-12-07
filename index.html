@@ -5,42 +5,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>XtraPlus</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body>
-	<!-- landing page starts -->
-	<section class="sec sec1">
-		<header>
-			<a href="index.html" class="logo"><img src="media/images/Logo.png"></a>
-			<div class="toggle" onclick="toggle()"></div>
-			<ul class="navigation">
-				<li><a href="about.html">Our People</a></li>
-				<li class="drpdown"><a href="#">Our Services</a>
-					<div class="drop-down">
-						<ul class="drop-down-content">
-							<a href="networking.html">Networking Services</a>
-							<a href="ip-solutions.html">IP-Solutions</a>
-							<a href="security-solutions.html">Security-Solutions</a>
-							<a href="development.html">App Development</a>
-							<a href="system-integration.html">System Integration</a>
-						</ul>
-					</div>
-				</li>
-				<li class="drpdown"><a href="#">Business Structure</a>
-					<ul class="drop-down-content">
-						<a href="verticals.html">Business Verticals</a>
-						<a href="certifications.html">Certifications and Accreditations</a>
-						<a href="help-desk.html">Help-Desk Services</a>
-						<a href="product-analysis.html">Products Portfolio</a>
-					</ul>
-				</li>
-				<li><a href="#">Our Clients</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</header>
 
+<body>
+	<div class="loader-bg">
+		<div class="loader"></div>
+	</div>
+	<!-- landing page starts -->
+	<header>
+		<a href="index.html" class="logo"><img src="media/images/Logo.png"></a>
+		<div class="toggle" onclick="toggle()"></div>
+		<ul class="navigation">
+			<li><a href="about.html">Our People</a></li>
+			<li class="drpdown"><a href="#">Our Services</a>
+				<div class="drop-down">
+					<ul class="drop-down-content">
+						<a href="networking.html">Networking Services</a>
+						<a href="ip-solutions.html">IP-Solutions</a>
+						<a href="security-solutions.html">Security-Solutions</a>
+						<a href="development.html">App Development</a>
+						<a href="system-integration.html">System Integration</a>
+					</ul>
+				</div>
+			</li>
+			<li class="drpdown"><a href="#">Business Structure</a>
+				<ul class="drop-down-content">
+					<a href="verticals.html">Business Verticals</a>
+					<a href="certifications.html">Certifications and Accreditations</a>
+					<a href="help-desk.html">Help-Desk Services</a>
+					<a href="product-analysis.html">Products Portfolio</a>
+				</ul>
+			</li>
+			<li><a href="#">Our Clients</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</header>
+
+	<section class="sec sec1">
 		<div class="content">
 			<div class="textBx">
 				<h2><span>Your Total</span><br>ICT Solutions Partner!</h2>
@@ -114,28 +120,28 @@
 				<li class="link-item"><a href="">Contact Us</a></li>
 			</ul>
 		</div>
+
 		<div class="description">
 			<h1>Why Choose XtraPlus?</h1>
 			<button class="accordion">GUARANTEED SERVICES BACKED BY A SLA<span class="fas fa-chevron-down"></span></button>
 			<div class="panel">
-			  <p>Our confidence in the reliability and quality of our products and services is backed by a solid guarantee. We offer up to 99.9% availability Service Level Agreement.</p>
+				<p>Our confidence in the reliability and quality of our products and services is backed by a solid guarantee. We offer up to 99.9% availability Service Level Agreement.</p>
 			</div>
 
 			<button class="accordion">QUALITY SERVICES<span class="fas fa-chevron-down"></span></button>
 			<div class="panel">
-			  <p>We consistently deliver high quality services and solutions to customers based on our technology platform and the people we recruit and train. We always aim to offer customer services that are par excellence! We use automated Customer Relationship Management (CRM) Systems to ensure that all calls are tracked to completion within the SLA timelines and assurance.</p>
+		  		<p>We consistently deliver high quality services and solutions to customers based on our technology platform and the people we recruit and train. We always aim to offer customer services that are par excellence! We use automated Customer Relationship Management (CRM) Systems to ensure that all calls are tracked to completion within the SLA timelines and assurance.</p>
 			</div>
 
 			<button class="accordion">INNOVATION<span class="fas fa-chevron-down"></span></button>
 			<div class="panel">
-			  <p>We draw on the rich heritage of enterprise ICT solutions and our mystery of new IP based technologies such as security and telephony. This means that the customers can integrate IP communication solutions with existing investments to enhance and evolve their networks and communications as their needs grow.</p>
+		  		<p>We draw on the rich heritage of enterprise ICT solutions and our mystery of new IP based technologies such as security and telephony. This means that the customers can integrate IP communication solutions with existing investments to enhance and evolve their networks and communications as their needs grow.</p>
 			</div>
 
 			<button class="accordion">OUR PROMISE<span class="fas fa-chevron-down"></span></button>
 			<div class="panel">
-			  <p>We promise to: <br>• Deliver innovative value-added solutions which we will be upgrading regularly as the technology evolves.<br>• Invest in our people, our platforms and partner echo-systems to bring the latest technologies, backed by advanced expertise.<br>• Back you up with the most responsive customer service as we offer a wholistic user experience as good as any, if not better in the region.</p>
+		  		<p>We promise to: <br>• Deliver innovative value-added solutions which we will be upgrading regularly as the technology evolves.<br>• Invest in our people, our platforms and partner echo-systems to bring the latest technologies, backed by advanced expertise.<br>• Back you up with the most responsive customer service as we offer a wholistic user experience as good as any, if not better in the region.</p>
 			</div>
-		
 		</div>
 	</section> 
 
@@ -235,6 +241,7 @@
 		</div>
 	</footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

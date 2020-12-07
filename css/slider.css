@@ -1,9 +1,9 @@
 .slider{
   position: absolute;
-  bottom: 3px;
+  bottom: 20px;
   right: 80px;
   width: 36.5%;
-  height: 80%;
+  height: 90%;
   border-radius: 10px;
   overflow: hidden;
 }

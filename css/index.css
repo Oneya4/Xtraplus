@@ -24,73 +24,15 @@ body{
 .sec{
 	position: relative;
 	width: 100%;
-	min-height: 100vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 100px;
+	padding: 0 100px;
 }
 
 .sec1{
-	background: linear-gradient(#f11111, #da281e);
-}
-
-header{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 40px 50px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.logo img{
-	width: 70%;
-	height: 70px; 
-}
-
-.navigation{
-	position: relative;
-	display: flex;
-}
-
-.drop-down{
-	position: relative;
-	display: inline-block;
-}
-
-.drop-down-content{
-	display: none;
-	position: absolute;
-	min-width: 200px;
-	z-index: 2;
-}
-
-.drop-down-content a{
-	padding: 12px 0;
-	text-decoration: none;
-	display: block;
-}
-
-.drop-down, .drpdown:hover .drop-down-content{
-	display: block;
-	background-color: rgb(0,0,0,.3);
-	color: #f1f1f1;
-}
-
-.navigation li{
-	list-style: none;
-	font-size: 1.15rem;
-	font-weight: bold;
-}
-
-.navigation li a{
-	color: var(--body-font-color);
-	margin-left: 30px;
-	text-decoration: none;
+	background: linear-gradient(#f00000, #dc281e);
+	height: 81.6vh;
 }
 
 .content{
@@ -176,6 +118,10 @@ header{
 	background: linear-gradient(#f11111, #da281e);
 }
 
+.description span{
+	padding: 0 10px;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   	background-color: #e8e7e3;
@@ -193,10 +139,6 @@ header{
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   	background-color: #ccc;
-}
-
-.description span{
-	padding: 0 10px;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -258,6 +200,10 @@ header{
 		flex-direction: column;
 	}
 
+	.sec1{
+		height: 100%;
+	}
+
 	.navigation.active{
 		display: flex;
 	}
@@ -297,7 +243,7 @@ header{
 
 	.content{
 		max-width: 100%;
-		margin-top: 120px;
+		margin-top: 30px;
 	}
 
 	.content h2{
@@ -315,7 +261,7 @@ header{
 		height: 100%;
 		padding-right: 50px;
 		padding-left: 50px;
-		padding-bottom: 50px; 
+		padding-bottom: 50px;
 	}
 
 	.values{
